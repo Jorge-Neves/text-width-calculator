@@ -8,18 +8,66 @@
       content="width=
   , initial-scale=1.0"
     />
-    <title>Document</title>
+    <title>Text Width</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 100vh;
+        height: auto;
+        width: 100%;
+        background-color: black;
+      }
+
+      #title {
+        color: white;
+        font-family: 'Poppins Light', sans-serif;
+      }
+
+      #form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        height: 250px;
+        background-color: white;
+      }
+
+      #form-button {
+        width: 150px;
+        height: 30px;
+        background-color: black;
+        border-radius: 2em;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      #output-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        height: 100px;
+        background-color: white;
+      }
+    </style>
   </head>
-  <div>
-    <input type="text" />
-    <button type="button">Calculate</button>
-  </div>
   <body>
-    <div>
-      <p>
-        Total width
-        <span>variable</span>
-      </p>
+    <h1 id="title">Text width Calculator</h1>
+    <div id="form-container">
+      <input type="text" />
+      <button id="form-button" type="button">Calculate</button>
+    </div>
+    <div id="output-container">
+      <p>Total width</p>
+      <span>variable</span>
     </div>
   </body>
+  <script></script>
 </html>
