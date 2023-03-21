@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background-color: black;
+}
+
+#title {
+  color: white;
+  font-family: 'Poppins Light', sans-serif;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 250px;
+  background-color: white;
+}
+
+#form-button {
+  width: 150px;
+  height: 30px;
+  background-color: black;
+  border-radius: 2em;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#output-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 100px;
+  background-color: white;
+}

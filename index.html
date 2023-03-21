@@ -9,54 +9,8 @@
   , initial-scale=1.0"
     />
     <title>Text Width</title>
-    <style>
-      body {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        min-height: 100vh;
-        height: auto;
-        width: 100%;
-        background-color: black;
-      }
-
-      #title {
-        color: white;
-        font-family: 'Poppins Light', sans-serif;
-      }
-
-      #form-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 70%;
-        height: 250px;
-        background-color: white;
-      }
-
-      #form-button {
-        width: 150px;
-        height: 30px;
-        background-color: black;
-        border-radius: 2em;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
-
-      #output-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 70%;
-        height: 100px;
-        background-color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <h1 id="title">Text width Calculator</h1>
@@ -73,21 +27,4 @@
       <span id="output">variable</span>
     </div>
   </body>
-  <script>
-    const calculateWidth = () => {
-      let fontSize = 12;
-      document.getElementById('input').innerHTML =
-        document.getElementById('text-input').value;
-      let test = document.getElementById('input');
-      test.style.fontSize = fontSize;
-      var height = test.clientHeight + 1 + 'px';
-      var width = test.clientWidth + 1 + 'px';
-
-      console.log('height:', height, 'width:', width);
-
-      document.getElementById(
-        'output'
-      ).innerHTML = `'height:' ${height}, 'width:' ${width}`;
-    };
-  </script>
 </html>
