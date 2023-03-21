@@ -61,13 +61,33 @@
   <body>
     <h1 id="title">Text width Calculator</h1>
     <div id="form-container">
-      <input type="text" />
-      <button id="form-button" type="button">Calculate</button>
+      <p>Input:</p>
+      <span id="input"></span>
+      <input id="text-input" type="text" />
+      <button id="form-button" type="button" onclick="calculateWidth();">
+        Calculate
+      </button>
     </div>
     <div id="output-container">
-      <p>Total width</p>
-      <span>variable</span>
+      <p>Measurements:</p>
+      <span id="output">variable</span>
     </div>
   </body>
-  <script></script>
+  <script>
+    const calculateWidth = () => {
+      let fontSize = 12;
+      document.getElementById('input').innerHTML =
+        document.getElementById('text-input').value;
+      let test = document.getElementById('input');
+      test.style.fontSize = fontSize;
+      var height = test.clientHeight + 1 + 'px';
+      var width = test.clientWidth + 1 + 'px';
+
+      console.log('height:', height, 'width:', width);
+
+      document.getElementById(
+        'output'
+      ).innerHTML = `'height:' ${height}, 'width:' ${width}`;
+    };
+  </script>
 </html>
